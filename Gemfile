@@ -1,0 +1,26 @@
+source 'https://rubygems.org'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.0'
+
+gem 'rails-api'
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :development do
+  gem "foreman"
+  gem "rack-livereload"
+  gem "guard"
+  gem "guard-bundler"
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'rb-fsevent', :require => false
+end
+
