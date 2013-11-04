@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'rails-api'
+gem 'unicorn'
+gem "friendly_id", "~> 5.0.0"
 
 group :production do
   gem 'pg'

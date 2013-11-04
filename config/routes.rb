@@ -1,9 +1,9 @@
 Codespeak::Application.routes.draw do
 
 
-  resources :people, except: [:new, :edit]
+ #resources :people, except: [:new, :edit]
   namespace :api do
-    namespace :v2 do
+    namespace :v1 do
       resources :people
     end
   end
