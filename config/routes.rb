@@ -1,4 +1,16 @@
 Codespeak::Application.routes.draw do
+
+
+  resources :people, except: [:new, :edit]
+  namespace :api do
+    namespace :v2 do
+      resources :people
+    end
+  end
+
+  resources :people
+  root to: 'people#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
